@@ -12,14 +12,14 @@ setup(
 	py_modules=['appengine_auth'],
 	
 	classifiers=[
-		"License :: OSI Approved :: BSD License",
+		"License :: OSI Approved :: Apache Software License",
 		"Programming Language :: Python",
 		"Development Status :: 4 - Beta",
 		"Intended Audience :: Developers",
 		"Topic :: Software Development :: Libraries :: Python Modules",
 		],
 	keywords='google appengine gae authentication login',
-	license='BSD',
+	license='Apache',
 	install_requires=[
 		'setuptools',
 	],
