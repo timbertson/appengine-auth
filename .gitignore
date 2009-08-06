@@ -1,0 +1,6 @@
+appengine_auth.egg-info
+build
+dist
+*.swp
+*~
+
