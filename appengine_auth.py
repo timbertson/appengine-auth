@@ -31,7 +31,7 @@ class App(object):
 
 	def _getpass(self):
 		from getpass import getpass
-		return getpass("enter password for service \"%s\":" % (self.name,))
+		return getpass("enter password for service \"%s\": " % (self.name,))
 		self.password = password
 	
 	def login(self, email, password):
@@ -83,4 +83,12 @@ class App(object):
 		params = params.copy()
 		params['auth'] = self.key
 		return params
+
+if __name__ == '__main__':
+	name = 'test service'
+	email = raw_input("testing google login. what's your email? ")
+	url = raw_input("URL? e.g. http://myapp.appspot.com: ")
+	app = App(name, url)
+	app.login()
+
 
