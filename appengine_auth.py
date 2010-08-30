@@ -48,8 +48,13 @@ class App(object):
 			"source": self.name,
 			"accountType": self.auth_type })
 		auth_req = urllib2.Request(self.auth_uri, data=authreq_data)
-		auth_resp = urllib2.urlopen(auth_req)
-		auth_resp_body = auth_resp.read()
+		try:
+			auth_resp = urllib2.urlopen(auth_req)
+			auth_resp_body = auth_resp.read()
+		except urllib2.HTTPError, e:
+			if e.getcode() == 403:
+				raise AuthError()
+			raise
 		# auth response includes several fields - we're interested in 
 		#  the bit after Auth=
 		auth_resp_dict = dict(x.split("=") for x in auth_resp_body.split("\n") if x)
