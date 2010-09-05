@@ -4,7 +4,7 @@ from setuptools import *
 
 setup(
 	name='appengine_auth',
-	version='0.1.0',
+	version='0.1.1',
 	description='Google App Engine authorisation for non-web based python applications',
 	author='Tim Cuthbertson',
 	author_email='tim3d.junk+gae-auth@gmail.com',
