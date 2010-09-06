@@ -3,7 +3,7 @@
 <interface uri="http://gfxmonk.net/dist/0install/appengine-auth.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
 	<name>appengine-auth</name>
 	<summary>python library for authorizing clients to google appengine</summary>
-	<homepage>http://github.com/gfxmonk/appengine_auth</homepage>
+	<homepage>http://github.com/gfxmonk/appengine-auth</homepage>
 
 	<description>
 	</description>
