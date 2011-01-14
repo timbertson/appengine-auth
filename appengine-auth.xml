@@ -4,14 +4,13 @@
 	<name>appengine-auth</name>
 	<summary>python library for authorizing clients to google appengine</summary>
 	<homepage>http://github.com/gfxmonk/appengine-auth</homepage>
-
 	<description>
 	</description>
 	<group>
+		<environment insert="" mode="prepend" name="PYTHONPATH"/>
 		<implementation id="sha1new=009b245a8f07fe5863e51c4f752bed12aaf151b2" released="2010-09-05" version="0.1.1">
-		
-    <manifest-digest sha256="0bfca88b1cd75baf767208d2339ada25e9d61b091b477c0184d57636c244066b"/>
-    <archive href="http://gfxmonk.net/dist/0install/appengine-auth/appengine-auth-0.1.1.tgz" size="1432"/>
-  </implementation>
+			<manifest-digest sha256="0bfca88b1cd75baf767208d2339ada25e9d61b091b477c0184d57636c244066b"/>
+			<archive href="http://gfxmonk.net/dist/0install/appengine-auth/appengine-auth-0.1.1.tgz" size="1432"/>
+		</implementation>
 	</group>
 </interface>
